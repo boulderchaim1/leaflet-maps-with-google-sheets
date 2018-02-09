@@ -14,12 +14,13 @@ $(window).on('load', function() {
    * Returns an Awesome marker with specified parameters
    */
   function createMarkerIcon(icon, prefix, markerColor, iconColor) {
-    return L.AwesomeMarkers.icon({
-      //return L.ExtraMarkers.icon({
-      icon: icon,
-      //icon: 'fa-number',
-      //number: 12,
-      prefix: prefix,
+    //return L.AwesomeMarkers.icon({
+      return L.ExtraMarkers.icon({
+      //icon: icon,
+      icon: 'fa-number',
+      number: 12,
+      //prefix: prefix,
+      prefix: 'fa',
       markerColor: markerColor,
       iconColor: iconColor
     });
